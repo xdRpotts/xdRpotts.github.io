@@ -2,6 +2,7 @@
 var number = 10
 var amount = 0
 var clickUpgrade = 1
+var go = False
 
 function clicker(){
     var btn = document.getElementById("mybtn");
@@ -24,5 +25,15 @@ function upgrade(){
     }
     else if (amount < 15){
         clickUpgrade = (clickUpgrade + 0)
+    }
+}
+
+function autoclick(){
+    go = true
+    while (go){
+        var btn = document.getElementById("mybtn");
+        btn.value = number;
+        btn.innerHTML = number;
+        number = number - clickUpgrade
     }
 }
