@@ -69,8 +69,7 @@ body{
     }
 
     .font{
-        font-size: 5vh;
-        font-size: 5vw;
+        font-size: xx-large;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
@@ -133,4 +132,8 @@ body{
     .shopButton{
         height: 10vh;
         width:10%;
+        position: absolute;
+        top: 7vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
     }
