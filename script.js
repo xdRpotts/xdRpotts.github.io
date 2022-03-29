@@ -2,14 +2,11 @@
 var number = 10
 var amount = 0
 var clickUpgrade = 1
-var perSecond = 1
-var auto = 0
-
 
 function clicker(){
-    var btn = document.getElementById("mybtn");
-    btn.value = number;
-    btn.innerHTML = number;
+    var btnOne = document.getElementById("mybtn");
+    btnOne.value = number;
+    btnOne.innerHTML = number;
     number = number - clickUpgrade
     if (number < 1){
         number = 10;
@@ -29,12 +26,3 @@ function upgrade(){
         clickUpgrade = (clickUpgrade + 0)
     }
 }
-
-function check(){
-    if (auto == 1){
-        window.alert("ok")
-    }
-}
-
-
-

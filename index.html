@@ -9,24 +9,31 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <script src="script.js"></script>
-        <script src="auto.js"></script>
-        
-        <div>
-            <button type="button" onclick="auto()" class="">+1 click per second</button>
+
+
+        <button id="myBtn" class="shopButton">Open Shop</button>
+
+
+        <div id="myModal" class="modal">
+
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <center><button type="button" onclick="upgrade()" class="inShopButton">+1 click per click - (costs 15 loops)</button></center>
         </div>
 
-        <div>
-            <button type="button" onclick="upgrade()" class="upgradePosition"><strong>(+1 click per click) - (costs 15 loops)</strong></button>
         </div>
+
+        <script src="modal.js"></script>
+        <script src="script.js"></script>
+
+        
 
         <div class="box center">
             <div>
                 <button type="button" onclick="clicker()" id="mybtn" value="number" class="buttonSize buttonCenter">click</button>
             </div>
-    
 
-            
             <div>
                 <p class="font textTwoCenter">You have looped</p>
                 <p id="amountOf" class="textCenter font">0</p>
