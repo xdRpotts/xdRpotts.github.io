@@ -9,6 +9,15 @@ body{
         font-size: 12vmin;
         background-color: rgb(231, 229, 229);
     }
+    
+    .buttonCenter{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0px;
+        text-align: center;
+    }
 
     .center{
         position: absolute;
@@ -19,14 +28,6 @@ body{
         
     }
 
-    .buttonCenter{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px
-        
-    }
 
 
     .textCenter{
@@ -134,9 +135,12 @@ body{
         height: 10vh;
         width:10%;
         position: absolute;
-        top: 7vh;
-        left: 50vw;
+        top: 50vh;
+        left: 24vw;
         transform: translate(-50%, -50%);
+        font-size: 3.5vh;
+        text-align: center;
+        padding: 0px;
     }
 
     .padding{
