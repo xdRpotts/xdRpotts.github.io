@@ -106,6 +106,7 @@ body{
         padding: 20px;
         border: 1px solid #888;
         width: 25%; /* Could be more or less, depending on screen size */
+
     }
     
     /* The Close Button */
@@ -145,4 +146,31 @@ body{
 
     .padding{
         padding: 1px;
+    }
+
+    .numberOf{
+        height: 15vh;
+        width: 10vw;
+        position: absolute;
+        top: 65vh;
+        left: 24vw;
+        transform: translate(-50%, -50%);
+        border: 3px solid black;
+      }
+
+    .fontTwo{
+      font-size: 3vh;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      white-space: nowrap;
+    }
+
+    .textAlign{
+      text-align: center;
+    }
+
+    .clicksPerPosition{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
