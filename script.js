@@ -3,7 +3,7 @@ var number = 10;
 var amount = 0;
 var clickUpgrade = 1;
 var numberConstant = 10
-var numberBase = 10
+var numberBase = 11
 
 
 function upgradeAmount(){
@@ -42,8 +42,16 @@ function rebirth(){
         number = number + 0;
     }
     else if (clickUpgrade == numberBase){
-        numberConstant = (numberConstant + 10);
-        numberBase = (numberBase + 10);
-        clickUpgrade = 1;
+        if (numberBase < 100){
+            numberConstant = (numberConstant + 10);
+            numberBase = (numberBase + 10);
+            clickUpgrade = 1;
+            document.getElementById("upgradeAmount").innerHTML = clickUpgrade;
+        }
+
+        else{
+            numberConstant = (numberConstant + 0);
+        }
+
     }
 }
