@@ -3,6 +3,14 @@ var number = 10;
 var amount = 0;
 var clickUpgrade = 1;
 var numberConstant = 10
+var numberBase = 10
+
+
+function upgradeAmount(){
+    document.getElementById("upgradeAmount").innerHTML = clickUpgrade;
+    console.log("numberBase = ", numberBase);
+    console.log("numberConstant = ",numberConstant);
+  }
 
 
 function clicker(){
@@ -27,10 +35,15 @@ function upgrade(){
     else if (amount < 15){
         clickUpgrade = (clickUpgrade + 0)
     }
-    if (clickUpgrade > 10 || clickUpgrade < 10){
+}
+
+function rebirth(){
+    if (clickUpgrade > numberBase || clickUpgrade < numberBase){
         number = number + 0;
     }
-    else if (clickUpgrade == 10){
-        numberConstant = 20;
+    else if (clickUpgrade == numberBase){
+        numberConstant = (numberConstant + 10);
+        numberBase = (numberBase + 10);
+        clickUpgrade = 1;
     }
 }
